@@ -1,20 +1,17 @@
 <?php
 
 if(isset($_POST['email']) && !empty($_POST['email']) &&
- isset($_POST['mensagem']) && !empty($_POST['mensagem'])){
+ isset($_POST['message']) && !empty($_POST['message'])){
 
 $nome = addslashes($_POST['nome']);
 $email = addslashes($_POST['email']);
-$empresa = addslashes($_POST['empresa']);
-$assunto = addslashes($_POST['assunto']);
-$mensagem = addslashes($_POST['mensagem']);
+$message = addslashes($_POST['message']);
 
-$to = "contato@accosistemas.com";
-$subject = "Site: " .$assunto;
+$to = "contato@edischool.com.br";
+$subject = "Contato pelo site";
 $body = "Nome: ".$nome."\r\n".
-        "Empresa: ".$empresa."\r\n".
         "Email: ".$email."\r\n".
-        "Mensagem: ".$mensagem."\r\n\r\n".
+        "Mensagem: ".$message."\r\n\r\n".
 $header = "From:contato@accosistemas.com"."\r\n".
         "Reply-To:".$email."\r\n".
         "X=Mailer:PHP/".phpversion();

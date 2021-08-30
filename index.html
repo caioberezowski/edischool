@@ -32,8 +32,13 @@
 
     <!-- navbar -->
     <header>
-      <div class="container">
-        <img src="/images/logo/edi_logo.svg" alt="EdiSchool" width="71" height="64"></img>
+      <div class="menu-nav">
+        <div class="logo">
+          <a href="./">
+            <img src="/images/logo/edi_logo.svg" alt="EdiSchool" width="71" height="64"></img>
+          </a>
+        </div>
+      
         <div class="menu-section">
           <div class="menu-toggle">
             <div class="one"></div>
@@ -57,38 +62,47 @@
             </ul>
           </nav>
         </div>
+        
       </div>
     </header>
     <!-- intro -->
-    <section class="intro">
-      <div class="container">
-        <div class="intro-text">
-          <h2>
-            <span style="color: #FDC644; font-size: 400%;">edi</span><span style="color: #37352E; font-size: 400%;">school</span>
+    <main>
+    <div class="hero">
+      <section class="intro">
+        <div class="intro-news">
+          <div class="intro-text">
+            <h2>
+              <span style="color: #FDC644; font-size: 400%;">edi</span><span style="color: #37352E; font-size: 400%;">school</span>
+            </h2>
             <h3 class="subtitle-intro">
               educação.design.inspiração
             </h3> 
-          </h2>
-          <div class="form-novidades">
-            <form action="POST">
-              <h1>Novidades</h1>
-              <div>
-              <input
-                type="email-news"
-                id="novidades"
-                name="novidades"
-                placeholder="Seu email.."
-              />
-              <button type="submit" class="form-button-news">Receber</button>
-              </div>
-            </form>
+            
+            <div class="form-novidades">
+
+
+                <h1>Novidades</h1>
+                <!-- Begin Mailchimp Signup Form -->
+                  <div id="mc_embed_signup">
+                  <form action="https://edischool.us2.list-manage.com/subscribe/post?u=13409d90bc81d719ce6e64360&amp;id=7f1415651f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                    <input type="email-news" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div class="clear"><input type="submit" class="form-button-news" value="Receber" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                      </div>
+                  </form>
+                  </div>
+                <!--End mc_embed_signup-->
+
+            </div>
+          </div>
+          <div class="img-hero">
+            <img src="./images/edi/edi_capelo.svg" width="292" height="349" alt="Edi com chapéu de formatura" />
           </div>
         </div>
-        <img src="./images/edi/edi_capelo.svg" alt="Edi com chapéu de formatura" />
-      </div>
-    </section>
+      </section>
+      
       <!-- sobre -->
-    <main>
       <section class="sobre" id="sobre">
         <img src="/images/edi/edi_marcatexto.svg" alt="Edi com marcatexto"/>
         <div>
@@ -98,7 +112,7 @@
           <p><b>Educação, Design e Inspiração</b> são a essência da marca, que ensina sobre comunicação, marketing, publicidade, criatividade e design.</p>
         </div>
       </section>
-   
+    </div>
 
     <!-- aprenda -->
     <section class="aprenda" id="aprenda">
@@ -106,20 +120,22 @@
         <h1 class="chamada">De grão em grão você colhe conhecimento</h1>
         <h1>Aulas Gratuitas</h1>
       </div>
+
       <div class="slider">
-     
         <div class="card-video">
-          <iframe width="460" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          <h1>Exportando imagens para as suas  redes sociais em alta qualidade </h1>
+          <iframe src="https://www.youtube.com/embed/akgucjDjJNc" target="_blank"></iframe>
+          <div class="title-video">
+            <p>Briefing - A sua importância para um projeto harmônico e com relevância. </p>
+          </div>
           <div class="video-footer">
             <div class="video-perfil">
               <img src="/images/Avatars Default with Backdrop.png" alt="Foto de perfil"/>
-              <h1>Cindy Lopes</h1>
+              <p>Pamella Ringwald</p>
             </div>
             <div class="conteudo-video">
               <div class="video-duracao">
                 <img src="/images/icon/relogio.png" alt="duração">
-                <p>Duração: 7m</p>
+                <p>Duração: 9m</p>
               </div>
               <div class="video-dificuldade">
                 <img src="/images/icon/nivel1.png" alt="Fácil">
@@ -130,33 +146,14 @@
         </div>
 
         <div class="card-video">
-          <iframe width="460" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          <h1>Exportando imagens para as suas  redes sociais em alta qualidade </h1>
-          <div class="video-footer">
-            <div class="video-perfil">
-              <img src="/images/Avatars Default with Backdrop.png" alt="Foto de perfil"/>
-              <h1>Cindy Lopes</h1>
-            </div>
-            <div class="conteudo-video">
-              <div class="video-duracao">
-                <img src="/images/icon/relogio.png" alt="duração">
-                <p>Duração: 7m</p>
-              </div>
-              <div class="video-dificuldade">
-                <img src="/images/icon/nivel1.png" alt="Fácil">
-                <p>Fácil</p>
-              </div>
-            </div>
+          <iframe src="https://www.youtube.com/embed/f24ON9-nBhs" target="_blank"></iframe>
+          <div class="title-video">
+            <p>Marca - Construindo uma marca forte para seu público. </p>
           </div>
-        </div>
-
-        <div class="card-video">
-          <iframe width="460" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          <h1>Exportando imagens para as suas  redes sociais em alta qualidade </h1>
           <div class="video-footer">
             <div class="video-perfil">
               <img src="/images/Avatars Default with Backdrop.png" alt="Foto de perfil"/>
-              <h1>Cindy Lopes</h1>
+              <p>Pamella Ringwald</p>
             </div>
             <div class="conteudo-video">
               <div class="video-duracao">
@@ -179,27 +176,27 @@
     <section class="consultoria" id="consultoria">
       <div class="title-center">
         <h1 class="chamada">Tá precisando de ajuda?</h1>
-        <h1>Consultoria</h1>
+        <h1 >Consultoria</h1>
       </div>
 
       <div class="consult-cards">
         <div class="consult-card">
-          <img class="consult-img" src="/images/icon/la_pencil-ruler.png" alt="Lápis e régua"/>
+          <img class="consult-img" src="/images/icon/la_pencil-ruler.png" alt="Identidade Visual"/>
           <h1>Identidade Visual</h1>
           <p>A identidade visual deve ser uma das prioridades de qualquer negócio. É ela que te destaca da concorrência e leva sua empresa ao reconhecimento.</p>
           <p>Quer que seu negócio ou marca pessoal sejam reconhecidos? Invista na sua identidade visual.</p>
         </div>
         <div class="consult-card">
-          <img class="consult-img" src="/images/icon/la_pencil-ruler.png" alt="Lápis e régua"/>
-          <h1>Identidade Visual</h1>
-          <p>A identidade visual deve ser uma das prioridades de qualquer negócio. É ela que te destaca da concorrência e leva sua empresa ao reconhecimento.</p>
-          <p>Quer que seu negócio ou marca pessoal sejam reconhecidos? Invista na sua identidade visual.</p>
+          <img class="consult-img" src="/images/icon/la_photo-video.png" alt=" Produção de Conteúdo"/>
+          <h1>Produção de Conteúdo</h1>
+          <p>O conteúdo gera conexões e potencializa o engajamento da marca com os seus consumidores.</p>
+          <p>Invista em conteúdo personalizado, relevante e consistente, com o objetivo de atrair e reter seu público-alvo.</p>
         </div>
         <div class="consult-card">
-          <img class="consult-img" src="/images/icon/la_pencil-ruler.png" alt="Lápis e régua"/>
-          <h1>Identidade Visual</h1>
-          <p>A identidade visual deve ser uma das prioridades de qualquer negócio. É ela que te destaca da concorrência e leva sua empresa ao reconhecimento.</p>
-          <p>Quer que seu negócio ou marca pessoal sejam reconhecidos? Invista na sua identidade visual.</p>
+          <img class="consult-img" src="/images/icon/fluent_phone-desktop-24-regular.png" alt="Redes Sociais"/>
+          <h1>Redes Sociais</h1>
+          <p>Hoje as redes sociais tornaram-se vitrines de muitas marcas e a cada dia cresce a busca por diferenciação visual.</p>
+          <p>Oferecemos pacotes mensais de criação de arte para deixar suas redes sociais sempre atualizadas e mais engajadas.</p>
         </div>
       </div>
     </section>
@@ -220,7 +217,7 @@
             </div>
           </div>
           <div class="depo-perfil">
-            <img src="/images/depo/logo_agnes_pilates-1.png" alt="">
+            <img src="/images/depo/logo_agnes_pilates-1.png" alt="Studio de Pilates Agnes Murao">
             <h1>Agnes Mie Murao</h1>
             <p>Studio de Pilates Agnes Murao</p>
           </div>
@@ -228,27 +225,28 @@
 
         <div class="depo-card">
           <div class="depo-testimonial">
-            <div class="quote">
-              <p>Há 4 anos me indicaram o seu trabalho e só tenho a agradecer a sua dedicação e seu comprometimento em planejar e elevar o meu Studio de Pilates nas redes sociais. Obrigada pela parceria, pela amizade que criamos e por toda a paciência, rss..</p>
-            </div>
+            
+              <p>O trabalho da Pamella é excepcional. Além da excelência técnica, que é evidente e incontestável, ela leva o trabalho realizado pela sua marca para além de um simples design ou texto. O que ela cria captura a essência e passa a ser algo que faz parte do propósito do seu projeto. Recomendo demais!”.
+              </p>
+              <div class="quote"></div>
           </div>
           <div class="depo-perfil">
-            <img src="/images/depo/logo_agnes_pilates-1.png" alt="">
-            <h1>Agnes Mie Murao</h1>
-            <p>Studio de Pilates Agnes Murao</p>
+            <img src="/images/depo/logo_podcast 1.png" alt="Podcast: Te contei essa história?">
+            <h1>Christian Presa</h1>
+            <p>Podcast: Te contei essa história?</p>
           </div>
         </div>
 
         <div class="depo-card">
           <div class="depo-testimonial">
             <div class="quote">
-              <p>Há 4 anos me indicaram o seu trabalho e só tenho a agradecer a sua dedicação e seu comprometimento em planejar e elevar o meu Studio de Pilates nas redes sociais. Obrigada pela parceria, pela amizade que criamos e por toda a paciência, rss..</p>
+              <p>Eu ameiiiii o meu novo visual, meus pacientes amaram, sempre perguntam, e eu te indico pra todo mundo! Muito obrigado por tantoooo!! </p>
             </div>
           </div>
           <div class="depo-perfil">
-            <img src="/images/depo/logo_agnes_pilates-1.png" alt="">
-            <h1>Agnes Mie Murao</h1>
-            <p>Studio de Pilates Agnes Murao</p>
+            <img src="/images/depo/logo_greiciele 1.png" alt="Terapeuta EMDR">
+            <h1>Greiciele Lima</h1>
+            <p>Terapeuta EMDR</p>
           </div>
         </div>
       </div>
@@ -257,8 +255,8 @@
     <!-- treinamentos -->
     <section class="treinamentos" id="treinamentos">
       <div class="treinamentos-texto">
-        <h1 class="chamada">Oi eu sou o Edi!</h1>
-        <h1>Sobre</h1>
+        <h1 class="chamada">Quer aprender mais?</h1>
+        <h1>Treinamentos</h1>
         <p>Quer desenvolver novas habilidades utilizando o Illustrator ou Photoshop? Oferecemos um curso básico para você aprender a criar suas próprias artes e elevar o nível do seu negócio.</p>
       </div>
       <img src="/images/edi/Group 24.png" alt="Edi segurando placa do Illustrator e Photoshop">
@@ -279,39 +277,54 @@
           <img src="/images/edi/edi footer.svg" alt="EdiSchool">
 
           <div class="redes-sociais">
-            <a href="https://www.facebook.com/profile.php?id=100063583416399">
+            <a href="https://www.facebook.com/profile.php?id=100063583416399" target="_blank">
               <img src="/images/icon/facebook.png" alt="Facebook">
             </a>
-            <a href="https://www.instagram.com/edischool/">
+            <a href="https://www.instagram.com/edischool/" target="_blank">
               <img src="/images/icon/instagram.png" alt="instagram">
             </a>
           </div>
         </div>
-
-        <div >
-          <form action="POST" class="form-contato">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Seu Nome"><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="Seu Email"><br>
-            <label for="email">Mensagem</label><br>
-            <textarea name="message" rows="10" cols="30">Sua Mensagem
-            </textarea><br>
-            <button type="submit">Enviar</button>
-          </form>
+        <form method="POST" action="contato.php">
+          <div class="form-contato">   
+            <div class="row input-container">
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <input type="text" id="nome" name="nome" required />
+                  <label>Seu Nome</label> 
+                </div>
+              </div>
+              <div class="ccol-xs-12">
+                <div class="styled-input wide">
+                  <input type="email" id="email" name="email" required />
+                  <label>Seu Email</label> 
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea id="message" name="message" required></textarea>
+                <label>Sua Mensagem</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <button type="submit" class="btn-lrg submit-btn">Enviar</button>
+            </div>
+          </div>
+        </form>
         </div>
-      
       </section>
     </div>
 
     </main>
+
     <footer class="footer">
-      <p>© 2021. Todos os direitos reservados.</p>
+      <p> © 2021. Todos os direitos reservados.</p>
       <div class="accosistemas">
         <p>feito com &nbsp</p>
         <img src="/images/icon/accoheart.png" alt="Feito com amor por Acco Sistemas">
         <p>&nbsp por &nbsp</p>
-        <a href="http://www.accosistemas.com.br">Acco Sistemas</a>
+        <a href="http://www.accosistemas.com">Acco Sistemas</a>
       </div>
 
     </footer>
