@@ -170,6 +170,12 @@ input[type="email-news"] {
 	top:1px;
 }
 
+.img-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*=============== 
 SOBRE
 ==================*/
@@ -197,6 +203,7 @@ SOBRE
 APRENDA
 ==================*/
 
+
 .aprenda{
   display: flex;
   flex-direction:column;
@@ -217,11 +224,11 @@ APRENDA
 .card-video{
   display: flex;
   flex-direction:column;
-  width: 360px;
+  width: 30%;
   background-color:#E4E2E2;
   border-radius: 8px;
   border: none;
-  box-shadow: 2px 1px 8px -2px #E4E2E2;
+  box-shadow: 2px 1px 8px -2px #363636;
 
 }
 
@@ -230,7 +237,8 @@ APRENDA
 }
 
 iframe{
-  width: 360px;
+  border: none;
+  width: 100%;
   height: 200px;
 }
 
@@ -303,7 +311,7 @@ CONSULTORIA
 .consult-card{
   background-color: #fff;
   border-radius: 8px;
-  width: 300px;
+  width: 432px;
   height: 450px;
 
   display: flex;
@@ -342,7 +350,7 @@ DEPOIMENTOS
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:350px;
+  width:30%;
   transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 
@@ -350,6 +358,7 @@ DEPOIMENTOS
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+  
 }
 
 .depo-testimonial{
@@ -357,36 +366,16 @@ DEPOIMENTOS
   background:#ccc;
   padding: 16px;
   border-radius: 8px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }  
 
-.depo-testimonial p {
-  margin:0;
-}
-.quote {
-  z-index: 1;
-  position: relative;
-}
-.quote::before {
-	content: '\201c';
-	font-size: 12rem;
-	color: #F1AD56;
-	opacity: .4;
-  position: absolute;
-  top: -2rem;
-	left: -1rem;
-	z-index: -1;
-	pointer-events: none;
-}
-.quote::after {
-	content: '\201d';
-	font-size: 12rem;
-	color: #F1AD56;
-	opacity: .4;
-  position: relative;
-	bottom: 1.8rem;
-	left: 27rem;
-	z-index: -1;
-	pointer-events: none;
+.depo-testimonial:hover{
+  background:#F1AD56;
+  color:white;
+  font-weight: bold;
 }
 
 .depo-perfil{
@@ -639,3 +628,405 @@ font-style: normal;
 
 
 
+
+
+
+
+/*=============== 
+RESPONSIVE
+==================*/
+
+@media screen and (max-width: 1024px){
+  
+  
+  
+  .img-hero img {
+    width: 300px;
+    height: 300px;
+  }  
+
+  .video-footer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .video-perfil{
+    justify-content: center;
+  }
+
+  .consult-card{
+    width: 300px;
+  }
+}
+
+@media  screen and (max-width: 768px){
+
+  .intro-text{
+    font-size: 70%;
+  }
+  .subtitle-intro{
+    font-size: 200%;
+  }
+
+  .form-novidades h1{
+    font-size:100%;
+  }
+  .form-novidades form input {
+    font-size:100%;
+    padding: 10px;
+  }
+
+  .clear input{
+    width: 100%;
+    height: 50px;
+  }
+
+  .img-hero img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .sobre img{
+    width: 50%;
+    height: 50%;
+  }
+
+  .slider{
+    margin-top:30px;
+    padding: 0;
+  }
+
+  .card-video{
+    width: 307px;
+  }
+
+  .conteudo-video{
+    flex-direction: row;
+  }
+
+  .consultoria{
+    margin-top: 30px;
+  }
+
+  .consult-img{
+    width: 30%;
+  }
+
+  .consult-card{
+    width: 220px;
+    height: 380px;
+    font-size: 70%;
+  }
+  .consult-card p{
+    font-size: 1.4rem;
+  }
+
+
+  .depoimentos{
+    margin-top: -100px;
+  }
+
+  .depo-testimonial{
+    height: 240px;
+  }
+  .quote p{
+    font-size: 1.2rem;
+  }
+
+  .depo-perfil p {
+    font-size: 1.2rem;
+  }
+
+  .img-treinamentos img{
+    width: 80%;
+  }
+
+  .treinamentos-texto{
+    width: 70%;
+    font-size: 90%;
+  }
+
+  .contato-email a{
+    font-size:1.4rem;
+  }
+
+  .contato-sobre{
+    align-items: flex-start;
+  }
+
+  .redes-sociais{
+    margin-left: 50px;
+  }
+
+  .contato form input{
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header{
+    height: 70px;
+  }
+  .logo a img{
+    width: 70%;
+  }
+
+
+  nav {
+      display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+      background-color: var(--primary);
+      height: 5px;
+      width: 100%;
+      margin: 6px auto;
+
+      transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+      width: 40px;
+  }
+
+  /* fullscreen */
+  .menu-section.on {
+      position: absolute;
+      top:0;
+      left:0;
+      
+      width: 100vw;
+      height: 100vh;
+
+      background-color: white;
+      z-index: 10;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .menu-section.on nav {
+      display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+      position: absolute;
+      right: 25px;
+      top: 15px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+      transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+      opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+      transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul {
+      text-align: center;
+      display: block;
+  }
+
+  .menu-section.on nav ul a{
+      transition-duration: 0.5s;
+      font-size: 3rem;
+      line-height: 4rem;
+      display: block;
+  }
+
+  .sobre{
+    flex-direction:column;
+  }
+  
+  .slider{
+    flex-direction:column;
+  }
+  card-video {
+    width: 70%;
+  }
+
+  .intro-news {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .intro-edi{
+    text-align: center;
+  }
+
+  .img-hero img {
+    width: 150px;
+    height: 150px;
+  }
+
+  input[type="email-news"]{
+    width: 250px;
+  }
+
+  .contato {
+    flex-direction:column;
+  }
+
+  .sobre img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .chamada{
+    font-size: 2.6rem;
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-video {
+    margin-top:32px;
+  }
+
+  .consultoria{
+    height:100%;
+    margin-bottom: 32px;
+    background-size: cover;
+  }
+
+  .consult-cards{
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .consult-card{
+    width: 320px;
+    margin-top:32px;
+  }
+
+  .depoimentos{
+    margin-top: 0;
+  }
+
+  .depo-cards{
+    flex-direction: column;
+  }
+
+  .depo-card{
+    margin-top:32px;
+    width: 320px;
+  }
+
+  .depo-card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .quote p{
+    font-size: 1.4rem;
+  }
+
+  .treinamentos{
+    display: flex;
+    flex-direction:column-reverse;
+  }
+
+  .img-treinamentos img{
+    width:100%;
+  }
+
+  .treinamentos-texto{
+    margin-top:-100px;
+    width: 400px;
+  }
+  .treinamentos-texto .chamada{
+    text-align: left;
+  }
+  .contato{
+    align-items:center;
+    margin-top: -30px;
+    padding-bottom: 32px;
+    flex-direction: column-reverse;
+  }
+
+  .contato-title{
+    width:90%;
+  }
+  .contato-title h1{
+    padding-left: 30px;
+    text-align: left;
+
+  }
+
+
+
+  .contato-email{
+    display: none;
+  }
+
+  .contato-edi-social{
+    margin-top:32px;
+    align-items: center;
+  }
+  .contato-sobre{
+    align-items: center;
+  }
+
+  .bg-footer{
+    background-size: cover;
+  }
+
+  .footer{
+    flex-direction:column;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  
+  .treinamentos-texto{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .sobre div p{
+    width: 280px;
+  }
+
+
+  .intro-edi{
+    font-size:75%;
+  }
+  
+  input[type="email-news"]{
+    width: 280px;
+  }
+
+  .sobre-texto{
+    width: 90%;
+  }
+
+  .card-video{
+    width: 280px;
+  }
+  .consult-card{
+    width: 280px;
+  }
+
+  .depo-card{
+    width: 280px;
+  }
+
+  .contato form{
+    width: 280px;
+  }
+}

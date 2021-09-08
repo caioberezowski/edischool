@@ -7,12 +7,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="responsive.css"
-      media="screen and (max-width: 768px)"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="print.css" media="print" />
     <meta charset="utf-8"/>
@@ -35,7 +32,7 @@
       <div class="menu-nav">
         <div class="logo">
           <a href="./">
-            <img src="/images/logo/edi_logo.svg" alt="EdiSchool" width="71" height="64"></img>
+            <img src="/images/logo/edi_logo.svg" alt="EdiSchool" ></img>
           </a>
         </div>
       
@@ -71,33 +68,34 @@
       <section class="intro">
         <div class="intro-news">
           <div class="intro-text">
-            <h2>
-              <span style="color: #FDC644; font-size: 400%;">edi</span><span style="color: #37352E; font-size: 400%;">school</span>
-            </h2>
-            <h3 class="subtitle-intro">
-              educação.design.inspiração
-            </h3> 
+            <div class="intro-edi">
+              <h2>
+                <span style="color: #FDC644; font-size: 400%;">edi</span><span style="color: #37352E; font-size: 400%;">school</span>
+              </h2>
+              <h3 class="subtitle-intro">
+                educação.design.inspiração
+              </h3> 
+            </div>
+
             
             <div class="form-novidades">
-
-
                 <h1>Novidades</h1>
                 <!-- Begin Mailchimp Signup Form -->
                   <div id="mc_embed_signup">
                   <form action="https://edischool.us2.list-manage.com/subscribe/post?u=13409d90bc81d719ce6e64360&amp;id=7f1415651f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <div id="mc_embed_signup_scroll">
-                    <input type="email-news" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <input type="email-news" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div class="clear"><input type="submit" class="form-button-news" value="Receber" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                      <div class="clear">
+                        <input type="submit" class="form-button-news" value="Receber" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                       </div>
                   </form>
                   </div>
                 <!--End mc_embed_signup-->
-
             </div>
           </div>
           <div class="img-hero">
-            <img src="./images/edi/edi_capelo.svg" width="292" height="349" alt="Edi com chapéu de formatura" />
+            <img src="./images/edi/edi_capelo.svg"  alt="Edi com chapéu de formatura" />
           </div>
         </div>
       </section>
@@ -105,7 +103,7 @@
       <!-- sobre -->
       <section class="sobre" id="sobre">
         <img src="/images/edi/edi_marcatexto.svg" alt="Edi com marcatexto"/>
-        <div>
+        <div class="sobre-texto">
           <h1 class="chamada">Oi eu sou o Edi!</h1>
           <h1>Sobre</h1>
           <p>Criada pela publicitária e designer Pamella Arruda Ringwald, a EdiSchool nasceu para simplificar, ser prática e acessível. </p>
@@ -158,7 +156,7 @@
             <div class="conteudo-video">
               <div class="video-duracao">
                 <img src="/images/icon/relogio.png" alt="duração">
-                <p>Duração: 7m</p>
+                <p>Duração: 4m</p>
               </div>
               <div class="video-dificuldade">
                 <img src="/images/icon/nivel1.png" alt="Fácil">
@@ -168,9 +166,10 @@
           </div>
         </div>
 
+        
       </div>
     </section>
-
+  
 
     <!-- consultoria -->
     <section class="consultoria" id="consultoria">
@@ -213,7 +212,7 @@
         <div class="depo-card">
           <div class="depo-testimonial">
             <div class="quote">
-              <p>Há 4 anos me indicaram o seu trabalho e só tenho a agradecer a sua dedicação e seu comprometimento em planejar e elevar o meu Studio de Pilates nas redes sociais. Obrigada pela parceria, pela amizade que criamos e por toda a paciência, rss..</p>
+              <p>"Há 4 anos me indicaram o seu trabalho e só tenho a agradecer a sua dedicação e seu comprometimento em planejar e elevar o meu Studio de Pilates nas redes sociais. Obrigada pela parceria, pela amizade que criamos e por toda a paciência, rss.."</p>
             </div>
           </div>
           <div class="depo-perfil">
@@ -225,10 +224,9 @@
 
         <div class="depo-card">
           <div class="depo-testimonial">
-            
-              <p>O trabalho da Pamella é excepcional. Além da excelência técnica, que é evidente e incontestável, ela leva o trabalho realizado pela sua marca para além de um simples design ou texto. O que ela cria captura a essência e passa a ser algo que faz parte do propósito do seu projeto. Recomendo demais!”.
-              </p>
-              <div class="quote"></div>
+              <div class="quote">
+                <p>"O trabalho da Pamella é excepcional. Além da excelência técnica, que é evidente e incontestável, ela leva o trabalho realizado pela sua marca para além de um simples design ou texto. O que ela cria captura a essência e passa a ser algo que faz parte do propósito do seu projeto. Recomendo demais!”.</p>
+              </div>
           </div>
           <div class="depo-perfil">
             <img src="/images/depo/logo_podcast 1.png" alt="Podcast: Te contei essa história?">
@@ -240,7 +238,7 @@
         <div class="depo-card">
           <div class="depo-testimonial">
             <div class="quote">
-              <p>Eu ameiiiii o meu novo visual, meus pacientes amaram, sempre perguntam, e eu te indico pra todo mundo! Muito obrigado por tantoooo!! </p>
+              <p>"Eu ameiiiii o meu novo visual, meus pacientes amaram, sempre perguntam, e eu te indico pra todo mundo! Muito obrigado por tantoooo!!"</p>
             </div>
           </div>
           <div class="depo-perfil">
@@ -259,31 +257,37 @@
         <h1>Treinamentos</h1>
         <p>Quer desenvolver novas habilidades utilizando o Illustrator ou Photoshop? Oferecemos um curso básico para você aprender a criar suas próprias artes e elevar o nível do seu negócio.</p>
       </div>
-      <img src="/images/edi/Group 24.png" alt="Edi segurando placa do Illustrator e Photoshop">
+      <div class="img-treinamentos">
+        <img src="/images/edi/Group 24.png" alt="Edi segurando placa do Illustrator e Photoshop">
+      </div>
     </section>
 
     <!-- contato -->
     <div class="bg-footer">
+      <div class="contato-title">
+        <h1 class="chamada">Depois do bip deixe sua mensagem</h1>
+        <h1>Fale com a gente</h1>
+      </div>   
       <section class="contato" id="contato">
         <div class="contato-sobre">
-          <h1 class="chamada">Depois do bip deixe sua mensagem</h1>
-          <h1>Fale com a gente</h1>
           <div class="contato-email">
             <a href="mailto:contato@edischool.com.br" class="contato-email" >
               <img src="/images/icon/email.png" alt="Email do Edi">
               contato@edischool.com.br
             </a>
           </div>
-          <img src="/images/edi/edi footer.svg" alt="EdiSchool">
+          <div class="contato-edi-social">
+            <img src="/images/edi/edi footer.svg" alt="EdiSchool">
 
-          <div class="redes-sociais">
-            <a href="https://www.facebook.com/profile.php?id=100063583416399" target="_blank">
-              <img src="/images/icon/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/edischool/" target="_blank">
-              <img src="/images/icon/instagram.png" alt="instagram">
-            </a>
-          </div>
+            <div class="redes-sociais">
+              <a href="https://www.facebook.com/profile.php?id=100063583416399" target="_blank">
+                <img src="/images/icon/facebook.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/edischool/" target="_blank">
+                <img src="/images/icon/instagram.png" alt="instagram">
+              </a>
+            </div>
+          </div>         
         </div>
         <form method="POST" action="contato.php">
           <div class="form-contato">   
@@ -312,7 +316,6 @@
             </div>
           </div>
         </form>
-        </div>
       </section>
     </div>
 
