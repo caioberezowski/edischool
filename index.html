@@ -14,20 +14,18 @@
     <link rel="stylesheet" href="print.css" media="print" />
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Alterar aqui -->
     <meta
       name="description"
-      content="Atuamos no ramo de Criação de Sites Profissionais com 8 anos de experiência, atendendo todo o Brasil. "
+      content="Compartilhamento de conhecimento, sobre design  "
     />
     <meta
       name="keywords"
-      content="criação de sites, criar site, site barato, fazer site, preço site, empresa de site, desenvolvedor de sites, agencia de site, como fazer um site, criação site barato, como criar site, como construir site, criar um site, desenvolver site profissional, site profissional, site rapido, site simples, desenvolvedores de sites, web design, webdesign, webdesigner, agencia web, agência webdesign, como criar um site, como montar um site, criacao website, criar meu site, criador de sites, desenvolvimento de sites,"
+      content="educacao, design, inspiracao, conhecimento, curso, cursos online gratuitos, curso online gratis, cursos gratuitos, curso gratuito, cursos, cursos online, curso online, cursos online gratuitos com certificado, curso online gratuito com certificado, curso de ingles, curso em video, curso gratuito online, curso tecnico, curso online gratuito, curso de informática, curso de ingles online, curso profissionalizante, curso gratuito senai, curso senai, concurso inss, cursos gratuitos senac, curso senac, curso tecnico de enfermagem, concurso banco do brasil, curso de enfermagem, curso online gratuito senai, curso de marketing digital, curso de administração, curso prime"
     />
   </head>
 
   <body>
-
-    <!-- navbar -->
+    
     <header>
       <div class="menu-nav">
         <div class="logo">
@@ -36,16 +34,16 @@
           </a>
         </div>
       
-        <div class="menu-section">
+        <div class="menu-section ">
           <div class="menu-toggle">
             <div class="one"></div>
             <div class="two"></div>
             <div class="three"></div>
           </div>
           <nav>
-            <ul>
+            <ul id="menu-mobile">
               <li>
-                <a href="#aprenda">Aprenda</a>
+                <a href="#aprenda" >Aprenda</a>
               </li>
               <li>
                 <a href="#consultoria">Consultoria</a>
@@ -54,7 +52,10 @@
                 <a href="#treinamentos">Treinamentos</a>
               </li>
               <li>
-                <a href="http://blog.accosistemas.com">Dicas do Edi</a>
+                <a href="#contato">Contato</a>
+              </li>
+              <li>
+                <a href="https://edischool.com.br/blog/">Dicas do Edi</a>
               </li>
             </ul>
           </nav>
@@ -62,7 +63,7 @@
         
       </div>
     </header>
-    <!-- intro -->
+    
     <main>
     <div class="hero">
       <section class="intro">
@@ -76,18 +77,17 @@
                 educação.design.inspiração
               </h3> 
             </div>
-
-            
             <div class="form-novidades">
-                <h1>Novidades</h1>
+              <h1>Novidades</h1>
+            </div>
+            <div >
                 <!-- Begin Mailchimp Signup Form -->
-                  <div id="mc_embed_signup">
+                  <div id="mc_embed_signup" >
                   <form action="https://edischool.us2.list-manage.com/subscribe/post?u=13409d90bc81d719ce6e64360&amp;id=7f1415651f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                        <input type="email-news" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                      <div id="mc_embed_signup_scroll" class="input-mailchimp">
+                        <input type="email-news" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email" required>
                       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div class="clear">
-                        <input type="submit" class="form-button-news" value="Receber" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <input type="submit" class="form-button-news" value="Receber" name="subscribe" id="mc-embedded-subscribe" class="button">
                       </div>
                   </form>
                   </div>
@@ -127,7 +127,7 @@
           </div>
           <div class="video-footer">
             <div class="video-perfil">
-              <img src="/images/Avatars Default with Backdrop.png" alt="Foto de perfil"/>
+              <img src="/images/pam_png.png" alt="Foto de perfil"/>
               <p>Pamella Ringwald</p>
             </div>
             <div class="conteudo-video">
@@ -150,7 +150,7 @@
           </div>
           <div class="video-footer">
             <div class="video-perfil">
-              <img src="/images/Avatars Default with Backdrop.png" alt="Foto de perfil"/>
+              <img src="/images/pam_png.png" alt="Foto de perfil"/>
               <p>Pamella Ringwald</p>
             </div>
             <div class="conteudo-video">
@@ -166,7 +166,28 @@
           </div>
         </div>
 
-        
+        <div class="card-video">
+          <iframe src="https://www.youtube.com/embed/50gkz_ZWJmc" target="_blank"></iframe>
+          <div class="title-video">
+            <p>Identidade Visual - Representando sua marca para seu cliente. </p>
+          </div>
+          <div class="video-footer">
+            <div class="video-perfil">
+              <img src="/images/pam_png.png" alt="Foto de perfil"/>
+              <p>Pamella Ringwald</p>
+            </div>
+            <div class="conteudo-video">
+              <div class="video-duracao">
+                <img src="/images/icon/relogio.png" alt="duração">
+                <p>Duração: Xm</p>
+              </div>
+              <div class="video-dificuldade">
+                <img src="/images/icon/nivel1.png" alt="Fácil">
+                <p>Fácil</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   
@@ -174,25 +195,33 @@
     <!-- consultoria -->
     <section class="consultoria" id="consultoria">
       <div class="title-center">
-        <h1 class="chamada">Tá precisando de ajuda?</h1>
-        <h1 >Consultoria</h1>
+        <h1 class="chamada" style="color: white; opacity: 1;">Tá precisando de ajuda?</h1>
+        <h1 style="color: white; opacity: 1;">Consultoria</h1>
       </div>
 
       <div class="consult-cards">
+
         <div class="consult-card">
-          <img class="consult-img" src="/images/icon/la_pencil-ruler.png" alt="Identidade Visual"/>
+          <div class="consult-top-card">
+            <img class="consult-img" src="/images/icon/la_pencil-ruler.png" alt="Identidade Visual"/>
+          </div>
           <h1>Identidade Visual</h1>
           <p>A identidade visual deve ser uma das prioridades de qualquer negócio. É ela que te destaca da concorrência e leva sua empresa ao reconhecimento.</p>
           <p>Quer que seu negócio ou marca pessoal sejam reconhecidos? Invista na sua identidade visual.</p>
         </div>
+
         <div class="consult-card">
-          <img class="consult-img" src="/images/icon/la_photo-video.png" alt=" Produção de Conteúdo"/>
+          <div class="consult-top-card">
+            <img class="consult-img" src="/images/icon/la_photo-video.png" alt=" Produção de Conteúdo"/>
+          </div>
           <h1>Produção de Conteúdo</h1>
           <p>O conteúdo gera conexões e potencializa o engajamento da marca com os seus consumidores.</p>
           <p>Invista em conteúdo personalizado, relevante e consistente, com o objetivo de atrair e reter seu público-alvo.</p>
         </div>
         <div class="consult-card">
-          <img class="consult-img" src="/images/icon/fluent_phone-desktop-24-regular.png" alt="Redes Sociais"/>
+          <div class="consult-top-card">
+            <img class="consult-img" src="/images/icon/fluent_phone-desktop-24-regular.png" alt="Redes Sociais"/>
+          </div>
           <h1>Redes Sociais</h1>
           <p>Hoje as redes sociais tornaram-se vitrines de muitas marcas e a cada dia cresce a busca por diferenciação visual.</p>
           <p>Oferecemos pacotes mensais de criação de arte para deixar suas redes sociais sempre atualizadas e mais engajadas.</p>
@@ -258,7 +287,7 @@
         <p>Quer desenvolver novas habilidades utilizando o Illustrator ou Photoshop? Oferecemos um curso básico para você aprender a criar suas próprias artes e elevar o nível do seu negócio.</p>
       </div>
       <div class="img-treinamentos">
-        <img src="/images/edi/Group 24.png" alt="Edi segurando placa do Illustrator e Photoshop">
+        <img src="/images/edi/edi_programas.png" alt="Edi segurando placa do Illustrator e Photoshop">
       </div>
     </section>
 
@@ -331,10 +360,8 @@
       </div>
 
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="scripts.js"></script>
     <script src="menu.js"></script>
   </body>

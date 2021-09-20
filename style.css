@@ -15,11 +15,13 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  
 }
 
 html {
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -33,6 +35,9 @@ body {
   font-size: 1.6rem;
 }
 
+
+
+
 h1{
   font-family: "Lato",sans-serif;
   padding-top: 16px;
@@ -41,11 +46,13 @@ h1{
 
 
 .chamada{
+  margin-top: 30px;
   font-size: 3.4rem;
   opacity:0.5
 }
 
 header {
+  min-height: 80px;
   font-family: "Lato", sans-serif;
   background-color: #fff;
   padding: 8px;
@@ -119,26 +126,20 @@ section.intro .intro-news {
   font-size:3.2rem;
 }
 
-.form-novidades h1{
-  margin-bottom: 16px;
-}
+
+
 .form-novidades{
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  font-size: 1.6rem;
+  
+  margin-bottom: 15px;
+
 }
 
-.form-novidades div{
+.input-mailchimp{
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
-
-
 input[type="email-news"] {
- 
-  width: 320px;
+  width: 67%;
   height: 50px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -146,9 +147,8 @@ input[type="email-news"] {
 }
 
 .form-button-news {
-
+  width: 27%;
   height: 60px;
-  margin-left: 10px;
 	box-shadow: 2px 1px 8px -2px var(--attention);
 	background-color:var(--attention);
   border: none;
@@ -158,9 +158,11 @@ input[type="email-news"] {
 	color:#ffffff;
 	font-family:"Flama", sans-serif;
 	font-size:  2.0rem;
-	padding:10px 26px;
+  margin-left: 10px;
+	padding:10px 10px;
 	text-decoration:none;
 }
+
 .form-button-news:hover {
 	background-color:var(--attention);
   opacity: 0.8;
@@ -185,6 +187,7 @@ SOBRE
   margin: auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .sobre img{
@@ -210,6 +213,7 @@ APRENDA
 }
 
 .title-center{
+  padding-top: 80px;
   display: flex;
   flex-direction:column;
   align-items:center;
@@ -244,12 +248,10 @@ iframe{
 
 .card-video p{
   font-size: 1.6rem;
-  padding:18px ;
+  padding:16px ;
 }
 
-.title-video{
-  height: 74px;
-}
+
 
 .video-footer{
   display: flex;
@@ -259,11 +261,16 @@ iframe{
   padding: 8px;
 }
 
-.video-perfil{
+.video-perfil {
   display: flex;
   align-items: center;
   width: 80px;
   height:72px;
+}
+.video-perfil img{
+  margin-left: 18px;
+  width: 68px;
+  height:68px;
 }
 
 .conteudo-video{
@@ -297,9 +304,9 @@ iframe{
 CONSULTORIA
 ==================*/
 .consultoria{
-  background-image: url(/images/fundoconsultoria.png);
+  background-color: #4B8FBD;
   background-repeat: no-repeat;
-  height: 710px;
+  padding-bottom: 30px;
 }
 
 .consult-cards{
@@ -307,29 +314,46 @@ CONSULTORIA
   justify-content:space-evenly;
   margin-top: 36px;
 }
+.consult-top-card{
+  background-color: var(--primary);
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  box-shadow: 2px 1px 8px -2px var(--primary);
+}
 
 .consult-card{
   background-color: #fff;
   border-radius: 8px;
-  width: 432px;
-  height: 450px;
+  width: 300px;
+  height: 470px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 
-  padding: 24px;
+
   border: none;
-  box-shadow: 2px 1px 8px -2px #000;
+  box-shadow: 2px 1px px -2px var(--white);
 
 }
 
+.consult-card h1{
+  padding: 24px;
+}
 .consult-card p{
+  padding: 0 24px 18px;
   font-size: 1.8rem;
 }
 
 .consult-img{
+  color: #fff;
   width: 90px;
 }  
 
@@ -340,10 +364,12 @@ DEPOIMENTOS
 ==================*/
 .depo-cards{
   margin-top: 42px;
+  margin-bottom: 42px;
   padding: 16px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 .depo-card {
   display: flex;
@@ -398,19 +424,22 @@ DEPOIMENTOS
 }
 
 /*=============== 
-DEPOIMENTOS
+Treinamentos
 ==================*/
 .treinamentos{
-  padding-top: 30px;
-  width: 90%;
-  max-width: 980px;
+  
+  background-color: var(--primary);
+  padding: 80px 30px 30px 30px;
+  width: 100%;
+
   margin: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .treinamentos-texto{
+  max-width:411px;
   display: flex;
   flex-direction: column;
   justify-content:space-around;
@@ -435,9 +464,18 @@ CONTATO
   max-width: 980px;
   margin: auto;
 
+  
   display: flex;
   flex-direction: row;
   justify-content:space-between; 
+
+  padding-bottom: 16px;
+}
+.contato-title{
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contato-sobre{
@@ -467,8 +505,7 @@ CONTATO
 .redes-sociais {
   display: flex;
   padding: 16px 0;
-  width: 100px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .redes-sociais a:hover{
@@ -645,13 +682,26 @@ RESPONSIVE
     height: 300px;
   }  
 
+  .sobre{
+    padding: 30px 0;
+  }
+  .sobre img {
+    width: 300px;
+    height: 300px;
+  } 
+
+  .title-video{
+    height:89px;
+  }
+
   .video-footer{
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    
   }
-  .video-perfil{
-    justify-content: center;
-  }
+  
 
   .consult-card{
     width: 300px;
@@ -667,17 +717,20 @@ RESPONSIVE
     font-size: 200%;
   }
 
-  .form-novidades h1{
-    font-size:100%;
+  .input-mailchimp{
+    height: 130px;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .form-novidades form input {
-    font-size:100%;
-    padding: 10px;
+  .form-button-news{
+    margin-left: 0;
   }
-
-  .clear input{
+  input[type="email-news"] {
     width: 100%;
-    height: 50px;
+
+  }
+  input[type="submit"]{
+    width:100%;
   }
 
   .img-hero img{
@@ -685,10 +738,13 @@ RESPONSIVE
     height: 200px;
   }
 
-  .sobre img{
-    width: 50%;
-    height: 50%;
+  .sobre{
+    padding: 30px 0;
   }
+  .sobre img {
+    width: 200px;
+    height: 200px;
+  } 
 
   .slider{
     margin-top:30px;
@@ -696,10 +752,11 @@ RESPONSIVE
   }
 
   .card-video{
-    width: 307px;
+    width: 220px;
   }
 
   .conteudo-video{
+    padding: 8px;
     flex-direction: row;
   }
 
@@ -711,20 +768,22 @@ RESPONSIVE
     width: 30%;
   }
 
+  .consult-top-card{
+    height: 80px;
+  }
+
   .consult-card{
     width: 220px;
-    height: 380px;
-    font-size: 70%;
+    height: 420px;
+    font-size: 1.4rem;
   }
   .consult-card p{
     font-size: 1.4rem;
   }
 
-
-  .depoimentos{
-    margin-top: -100px;
+  .video-perfil img{
+    margin-left: 8px;
   }
-
   .depo-testimonial{
     height: 240px;
   }
@@ -734,10 +793,6 @@ RESPONSIVE
 
   .depo-perfil p {
     font-size: 1.2rem;
-  }
-
-  .img-treinamentos img{
-    width: 80%;
   }
 
   .treinamentos-texto{
@@ -751,10 +806,6 @@ RESPONSIVE
 
   .contato-sobre{
     align-items: flex-start;
-  }
-
-  .redes-sociais{
-    margin-left: 50px;
   }
 
   .contato form input{
@@ -796,6 +847,7 @@ RESPONSIVE
       top:0;
       left:0;
       
+  
       width: 100vw;
       height: 100vh;
 
@@ -835,15 +887,20 @@ RESPONSIVE
   }
 
   .menu-section.on nav ul a{
-      transition-duration: 0.5s;
-      font-size: 3rem;
-      line-height: 4rem;
-      display: block;
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
   }
 
   .sobre{
     flex-direction:column;
+    padding: 30px 0;
   }
+  .sobre img {
+    width: 150px;
+    height: 150px;
+  } 
   
   .slider{
     flex-direction:column;
@@ -866,17 +923,10 @@ RESPONSIVE
     height: 150px;
   }
 
-  input[type="email-news"]{
-    width: 250px;
-  }
+
 
   .contato {
     flex-direction:column;
-  }
-
-  .sobre img{
-    width: 250px;
-    height: 250px;
   }
 
   .chamada{
@@ -892,6 +942,7 @@ RESPONSIVE
 
   .card-video {
     margin-top:32px;
+    width: 320px;
   }
 
   .consultoria{
@@ -905,6 +956,9 @@ RESPONSIVE
     align-items: center;
   }
 
+  .consult-top-card{
+    height:120px;
+  }
   .consult-card{
     width: 320px;
     margin-top:32px;
@@ -938,12 +992,9 @@ RESPONSIVE
     flex-direction:column-reverse;
   }
 
-  .img-treinamentos img{
-    width:100%;
-  }
-
+ 
   .treinamentos-texto{
-    margin-top:-100px;
+  
     width: 400px;
   }
   .treinamentos-texto .chamada{
@@ -965,7 +1016,15 @@ RESPONSIVE
 
   }
 
+  .img-treinamentos{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
 
+  .img-treinamentos img{
+    width: 80%;
+  }
 
   .contato-email{
     display: none;
@@ -991,6 +1050,7 @@ RESPONSIVE
 
 @media screen and (max-width: 375px) {
   
+
   .treinamentos-texto{
     width: 90%;
   }
@@ -998,6 +1058,7 @@ RESPONSIVE
 
 @media screen and (max-width: 320px) {
 
+  
   .sobre div p{
     width: 280px;
   }
@@ -1007,9 +1068,6 @@ RESPONSIVE
     font-size:75%;
   }
   
-  input[type="email-news"]{
-    width: 280px;
-  }
 
   .sobre-texto{
     width: 90%;
